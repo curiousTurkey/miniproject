@@ -1,0 +1,271 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+header{
+	position: fixed;
+	background: repeating-linear-gradient(to right,#02244d,#02244d,#c9ccd1 ,#02244d,#02244d);
+	padding: 20px;
+	width: 100%;
+	height: 30px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.0);
+}
+
+.left h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 900;
+    padding-left: 50px;
+}
+.left span{
+	color: #1108bd;
+}
+.logout_btn{
+	padding: 5px;
+	background: #07017d;
+	text-decoration: none;
+	float: right;
+	margin-top: -30px;
+	margin-right: 40px;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	transition: 0.45s;
+	transition-property: background;
+}
+
+.logout_btn:hover{
+	background:#1108bd;
+}
+
+.sidebar{
+	background: #030563;
+	margin-top: 70px;
+	padding-top: 50px;
+	position: fixed;
+	left: 0;
+	width: 240px;
+	height: 100%;
+	transition: 0.6s;
+	transition-property: left;
+}
+.sidebar .profile_pic{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin-bottom: 10px;
+
+}
+.sidebar h4{
+	color: #ccc;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.sidebar a{
+	color: #fff;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-left: 70px;
+	box-sizing: border-box;
+	transition: 0.556s;
+	transition-property: background;
+	
+
+}
+
+.sidebar a:hover{
+	background: #fff;
+	color: #000;
+}
+
+.logo{
+	content: url("./images/logo.png");
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	left: 760px;
+	top: 2px;
+}
+
+label .menubar{
+	z-index: 1;
+	content: url("./images/menu.png");
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 20px;
+	top: 28px;
+	cursor: pointer;
+}
+
+#check:checked ~ .sidebar{
+	left: -190px;
+}
+
+.icon{
+	content: url("./images/schedule.png");
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: 20px;
+	top: 225px;
+
+}
+.icon1{
+	content: url("./images/servicestat.png");
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: 20px;
+	top: 300px;
+
+}
+.icon2{
+	content: url("./images/receipt.png");
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: 20px;
+	top: 367px;
+
+}
+.icon3{
+	content: url("./images/profile.png");
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: 20px;
+	top: 440px;
+
+}
+.icon4{
+	content: url("./images/home.png");
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: 20px;
+	top: 505px;
+
+}
+.icon5{
+	content: url("./images/icon4.png");
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: 20px;
+	top: 575px;
+
+}
+#check:checked ~ .sidebar .icon {
+	left: 200px;
+}
+#check:checked ~ .sidebar .icon1 {
+	left: 200px;
+}
+#check:checked ~ .sidebar .icon2 {
+	left: 200px;
+}
+#check:checked ~ .sidebar .icon3 {
+	left: 200px;
+}
+#check:checked ~ .sidebar .icon4 {
+	left: 200px;
+}
+#check:checked ~ .sidebar .icon5 {
+	left: 200px;
+}
+#check:checked ~ .sidebar a span{
+	display: none;
+}
+
+#check:checked ~ .sidebar a{
+	font-size: 20px;
+	margin-left: 170px;
+	width: 80px;
+}
+
+.content{
+	margin-left: 220px;
+	background: url("./images/adminbg1.jpg");
+	background-repeat: no-repeat;
+	
+	background-size: cover;
+	height: 100vh;
+	transition: 0.6s;
+
+
+}
+#check:checked ~ .content{
+	margin-left: 50px;
+}
+#check{
+	display: none;
+}
+ .tablee{
+ 	
+	position: absolute;
+	left: 250px;
+	top: 140px;
+	width: 1100px;
+	background: rgba(255, 255, 255, 0.85);
+    box-shadow: 5px 10px 15px #000;
+    border-radius: 5px;
+
+	}
+	.tablee .worktable thead {
+	background: #000;
+	color: #fff;
+}
+
+.tablee .worktable {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 5px 10px 10px #000;
+}
+
+.tablee .worktable tr {
+    border-bottom: 2px solid #000;
+}
+.dataTables_wrapper .dataTables_filter input{
+	margin-bottom: 10px;
+	border: 1px solid;
+	padding: 10px;
+}
+.tablee .worktable tr:nth-child(even){
+	background-color: #878787;
+}
+.linkbutton{
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #000;
+	text-decoration: none;
+	background-color: #000 ;
+	color: #fff;
+}
+.linkbutton:hover{
+	background: #919191;
+	color: #050505;
+	transition: .5s;
+}
+.content .subm{
+	position:absolute; top :420px ; left:550px;	border:none;
+	cursor:pointer;
+	background:#53568a;
+	color:#fff;
+	font-weight:bold;
+	transition:0.6s;
+	width: 100px;
+	height: 40px;
+}
+.subm:hover{
+	background: #000;
+	color: #fff;
+}

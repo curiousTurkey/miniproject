@@ -1,0 +1,44 @@
+*{
+	 margin:0;
+	 padding:0;
+}
+
+body{
+	 height:100vh;
+	 background:url("./images/thankyoubg.jpg");
+	 background-size:cover;
+	 background-repeat:no-repeat;
+	 font-family:sans-serif;
+}
+.text h1{
+	position:absolute;
+	color:#fff;
+	top:500px;
+	left:350px;
+	font-weight:700;
+	font-size:80px;
+}
+.text h2{
+	position:absolute;
+	color:#fff;
+	top:400px;
+	left:550px;
+	font-weight:700;
+	font-size:30px;
+}
+a {
+	 text-decoration:none;
+	 color:#012059;
+}
+
+a:hover {
+	 text-decoration:underline;
+}
+
+.text1 h2{
+	color:#fff;
+	position:absolute;
+	top:400px;
+	left:550px;
+	
+}

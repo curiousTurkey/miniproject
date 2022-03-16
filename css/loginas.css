@@ -1,0 +1,108 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: DejaVu Sans Mono, monospace;
+	background: url("./images/loginas.jpg") ;
+	background-size: cover;
+	
+	background-repeat: no-repeat;
+	
+}
+body:before{
+	 content:'';
+	 position:absolute;
+	 top:0;
+	 left:-25%;
+	 width:125%;
+	 height:10%;
+	 background:repeating-linear-gradient(to right,#808080,#808080,#1f1f20,#1f1f20);
+	 opacity:.98;
+}
+
+.form{
+	position:absolute;
+
+	top:55%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width:600px;
+	min-height:400px;
+	background:#9c9c9c;
+	box-shadow:10px 10px 10px rgba(255,255,255,.40);
+	padding:50px;
+	box-sizing:border-box;
+	border-radius: 15px 15px 15px 15px;
+	opacity: 0.89;
+	border: medium #fff;
+	border-style: solid;
+}
+
+
+.form a{
+	align: center;
+	text-decoration:none;
+	color:#fff;
+	margin-top:20px;
+	font-weight:bold;
+	display:inline-block;
+	transition:0.45s;
+	width: 50px;
+	padding: 20px 85px;
+	border: 1px solid #000;
+	text-decoration: none;
+	background-color: #000 ;
+	color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 1.0);
+}	
+.form a:hover{
+	background: #919191;
+	color: #050505;
+	transition: .5s;
+}
+
+.aimage{
+	 content:url("./images/admin.png");
+	 width:20px;
+	 height:20px;
+	 position:absolute;
+
+}
+
+
+.eimage{
+	 content:url("./images/staff.png");
+	 width:20px;
+	 height:20px;
+	 position:absolute;
+}
+	
+.uimage{
+	content:url("./images/user.png");
+	 width:20px;
+	 height:20px;
+	 position:absolute;
+	
+}
+
+
+.clogo{
+	content: url("./images/logo.png");
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 10px;
+	left: 40px;
+
+	}
+
+p{
+	position: absolute;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: Roboto,sans-serif;
+	font-weight: 800;
+	left: 1150px;
+	top: -5px;
+	font-size: 25px;
+}
